@@ -29,6 +29,7 @@
 		844584A12BD6E0330048E176 /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whackBad.caf; sourceTree = "<group>"; };
 		844584A22BD6E0330048E176 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
 		844584A32BD707C70048E176 /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
+		8451E05F2BE14D3400D5FDA9 /* gameOverVoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameOverVoice.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 				844584992BD6DC050048E176 /* LaunchScreen.storyboard */,
 				844584A22BD6E0330048E176 /* whack.caf */,
 				844584A12BD6E0330048E176 /* whackBad.caf */,
+				8451E05F2BE14D3400D5FDA9 /* gameOverVoice.m4a */,
 			);
 			path = "Whack-a-Penguin";
 			sourceTree = "<group>";
