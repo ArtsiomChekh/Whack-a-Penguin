@@ -44,6 +44,14 @@ class WhackSlot: SKNode {
             charNode.texture = SKTexture(imageNamed: "penguinGood")
             charNode.name = "charFriend"
         } else {
+            let fireEmitter = SKEmitterNode(fileNamed: "FireParticle.sks")!
+            fireEmitter.position = charNode.position
+            addChild(fireEmitter)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                fireEmitter.removeFromParent()
+            }
+            
             charNode.texture = SKTexture(imageNamed: "penguinEvil")
             charNode.name = "charEnemy"
         }
@@ -62,6 +70,14 @@ class WhackSlot: SKNode {
     
     func hit() {
         isHit = true
+        
+        let smokeEmitter = SKEmitterNode(fileNamed: "SmokeParticle.sks")!
+        smokeEmitter.position = charNode.position
+        addChild(smokeEmitter)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                smokeEmitter.removeFromParent()
+        }
         
         let delay = SKAction.wait(forDuration: 0.25)
         let hide = SKAction.moveBy(x: 0, y: -80, duration: 0.5)
